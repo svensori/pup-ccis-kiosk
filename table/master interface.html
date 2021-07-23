@@ -1,0 +1,74 @@
+<?php
+	session_start();
+?>
+
+<html>
+	<head>
+	</head>
+	<body>
+		<style type="text/css">
+			.tg  {border-collapse:collapse;border-spacing:0;}
+			.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+			.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+			.tg .tg-e3zv{font-weight:bold}
+			.tg .tg-9hbo{font-weight:bold;vertical-align:top}
+			.tg .tg-yw4l{vertical-align:top}
+		</style>
+		<table class="tg">
+			<tr>
+			<th class="tg-9hbo" colspan="2">POST</th>
+			<th class="tg-9hbo" colspan="2">ADMINS</th>
+			<th class="tg-e3zv" colspan="3">USERS</th>
+		</tr>
+		<tr>
+			<td class="tg-9hbo">DELETE POST</td>
+			<td class="tg-9hbo">HEADER</td>
+			<td class="tg-9hbo">REMOVE ADMIN</td>
+			<td class="tg-9hbo">NAME</td>
+			<td class="tg-e3zv">CREATE ADMIN</td>
+			<td class="tg-9hbo">REMOVE USER</td>
+			<td class="tg-e3zv">NAME</td>
+		</tr>
+		
+		<?php
+			$connect = mysql_connect("localhost","root","") or die("Couldn't Connect!");
+			mysql_select_db("obbs") or die("Couldn't find DB!");
+			
+			$query = mysql_query("SELECT * FROM mailbox WHERE 1");
+			$numrows = mysql_num_rows($query);
+			
+			if($numrows != 0){		
+				while($row = mysql_fetch_assoc($query)){
+					$dbid = $row['id'];
+					$dbuserid = $row['userid'];
+					$dbname = $row['name'];
+					$dbtitle = $row['title'];
+					$dbcontent = $row['content'];
+					$dbstart = $row['start'];
+					$dbexpiry = $row['expiry'];	
+					$dbtimeposted = $row['timeposted'];
+
+					echo 	'<tr>';
+					echo	'<td class="tg-yw4l"><input type="button" name="delete" value="x" style="width:100%; height:100%;"></input></td>';
+					echo	'<td class="tg-yw4l">'.$dbid.'</td>';
+					echo	'<td class="tg-yw4l">'.$dbtimeposted.'</td>';
+					echo	'<td class="tg-yw4l">'.$dbstart.'</td>';
+					echo	'<td class="tg-yw4l">'.$dbexpiry.'</td>';
+					echo	'<td class="tg-yw4l">'.$dbname.'</td>';
+					echo	'<td class="tg-yw4l">'.$dbtitle.'</td>';
+					echo	'</tr>';
+				}
+			}	
+		?>
+		
+		<tr>
+			<td class="tg-yw4l"></td>
+			<td class="tg-yw4l"></td>
+			<td class="tg-yw4l"></td>
+			<td class="tg-yw4l"></td>
+			<td class="tg-yw4l"></td>
+			<td class="tg-yw4l"></td>
+			<td class="tg-yw4l"></td>
+		</tr>
+</table>
+	</body>

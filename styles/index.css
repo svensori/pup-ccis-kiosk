@@ -1,0 +1,32 @@
+		.body{
+			width:100%;
+			height:auto;
+			border:solid black;
+		}
+		.login{
+			width: 49%;
+			height: 40px;
+			margin-top:1px;
+			margin-left:50%;
+			text-align:center;
+			border:solid blue;
+			}
+		.registration{
+			width:40%;
+			height:80%;
+			text-align:center;
+			float:left;
+			border:solid yellow;
+		}
+		.details{
+			width:59%;
+			height:80%;
+			float:left;	
+			border:solid green;
+		}
+		.devthings{
+			width:100%;
+			height:14%;
+			float:left;
+			border:solid red;
+		}

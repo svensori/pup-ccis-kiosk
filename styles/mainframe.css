@@ -1,0 +1,139 @@
+		.body{
+			width:100%;
+			min-height:800px;
+			height: auto;
+			background-image:url("../res/bg1.jpg");
+			background-repeat: repeat-y;
+			float:left;
+			}
+		.date{
+			width:66.1%;
+			height:80px;
+			text-align:left;
+			position: fixed;
+			float:left;
+			font-family: agency fb;
+			background-color:white;
+			opacity: 0.7;
+			border:solid white;
+			}
+		.navigate{
+			width:16%;
+			height:80px;
+			text-align:center;
+			float:left;
+			font-family: agency fb;
+			font-size: 28px;
+			font-weight: bold;
+			background-color:white;
+			position: fixed;
+			border:solid black;
+		}
+		.community{
+			width:38.4%;
+			height:80px;
+			background-color:white;
+			margin-left:30.3%;
+			border:solid transparent;
+		}
+		.sidebtn{
+			width:50px;
+			height:50px;
+			position:fixed;
+			background-color:transparent;
+		}
+		.namebar{
+			width:110px;
+			height:15px;
+			position:fixed;
+			text-align:center;
+			background-color:white;
+			opacity:0.8;
+			border-radius:25px;
+			border:solid black;
+		}
+		.barrier{
+			width:100%;
+			height:100px;
+		}
+		.stickybody{
+			width:80%;
+			height:auto;
+			margin-left:10%;
+			margin-right:10%;
+			float:left;
+		}
+		.sticky{
+			width:32%;
+			height:400px;
+			min-height:30px;
+			text-align:left;
+			margin-left:3px;
+			margin-right:3px;
+			margin-bottom:10px;
+			font-family:agency fb;
+			background-image:url("../res/paper.jpg");
+			float:left;
+			background-color:white;
+			opacity:1;
+			border: solid black 1px;
+			border-radius: 5px;
+			word-wrap: break-word; 
+		}
+		
+		.modalDialog {
+			position: fixed;
+			font-family: Arial, Helvetica, sans-serif;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba(0,0,0,0.8);
+			z-index: 99999;
+			opacity:0;
+			-webkit-transition: opacity 400ms ease-in;
+			-moz-transition: opacity 400ms ease-in;
+			transition: opacity 400ms ease-in;
+			pointer-events: none;
+		}
+		
+		.modalDialog:target {
+			opacity:1;
+			pointer-events: auto;
+		}
+
+		.modalDialog > div {
+			width: 50%;
+			height: auto;
+			position: relative;
+			margin: 10% auto;
+			padding: 5px 20px 13px 20px;
+			border-radius: 10px;
+			background: #fff;
+			background: -moz-linear-gradient(#fff, #999);
+			background: -webkit-linear-gradient(#fff, #999);
+			background: -o-linear-gradient(#fff, #999);
+			background-image: url("../res/paper.jpg");
+		}
+
+		.close {
+			background: #606061;
+			color: #FFFFFF;
+			line-height: 25px;
+			position: absolute;
+			right: -12px;
+			text-align: center;
+			top: -10px;
+			width: 24px;
+			text-decoration: none;
+			font-weight: bold;
+			-webkit-border-radius: 12px;
+			-moz-border-radius: 12px;
+			border-radius: 12px;
+			-moz-box-shadow: 1px 1px 3px #000;
+			-webkit-box-shadow: 1px 1px 3px #000;
+			box-shadow: 1px 1px 3px #000;
+		}
+
+		.close:hover { background: #00d9ff; }
+		

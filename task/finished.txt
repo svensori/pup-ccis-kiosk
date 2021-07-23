@@ -1,0 +1,31 @@
+COMPLETED:
+
+main interface:
+-register
+-login
+-logout
+-write post
+-change pass
+-delete account
+-newsfeed
+-post expiration
+
+
+admin interface
+-delete post
+
+------------------------------
+PENDING
+
+master interface
+-delete post
+-remove admin
+-make admin
+-remove user
+
+
+admin
+-accept post
+
+
+comment

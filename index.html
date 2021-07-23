@@ -1,0 +1,204 @@
+<html>
+	<head>
+	<style>
+	
+		.body{
+			width:100%;
+			height:auto;
+			background-image: url("res/bg1.jpg");
+		}
+		.login{
+			width: 49%;
+			height: 40px;
+			margin-top:1px;
+			margin-left:50%;
+			text-align:center;
+			font-family:agency fb;
+			background-color:transparent;
+			background-image: url("res/bg1.jpg");
+			}
+		.registration{
+			width:40%;
+			height:80%;
+			text-align:center;
+			float:left;
+			background-color:transparent;
+			background-image: url("res/bg1.jpg");
+			font-family:agency fb;
+		}
+		.details{
+			width:60%;
+			height:80%;
+			float:left;
+			background-color:transparent;
+			background-image: url("res/bg1.jpg");
+			font-family:agency fb;
+		}
+		.devthings{
+			width:100%;
+			height:14%;
+			float:left;
+			background-color:transparent;
+			background-image: url("res/bg1.jpg");
+			font-family:agency fb;
+		}
+			
+	</style>
+	</head>
+	
+	<body>
+		<div class="body">
+		
+		
+			<div class="login">
+				
+				&nbsp&nbsp&nbsp&nbsp
+				<form action="index/login.php" method="post">
+				<strong>Login</strong>
+				E-mail Address:<input type="text" name="email" style="width:25%">
+				Password:<input type="password" name="pword" style="width:25%">
+				&nbsp&nbsp&nbsp&nbsp
+				<input type="Submit" value="Log in" name="submit">
+				</form>
+				</tt>
+			</div>
+			<br>
+			
+			<div class="registration">
+				<h2 style="-webkit-text-stroke-width: 0.8px; -webkit-text-stroke-color: white; -webkit-text-fill-width: 3px;">Sign Up</h2>
+				<form action="index/register.php" method="post">
+				
+				First Name:<br><input type="text" name="fname" value="" style="width:50%"><br>
+				Surname:<br><input type="text" name="lname" value="" style="width:50%"><br>
+				Age:<br><input type="text" name="age" value="" style="width:50%"><br><br>
+				Date of Birth:
+				<br>
+					<select name="month">
+					<option value="1">Jan</option>
+					<option value="2">Feb</option>
+					<option value="3">Mar</option>
+					<option value="4">Apr</option>
+					<option value="5">May</option>
+					<option value="6">Jun</option>
+					<option value="7">Jul</option>
+					<option value="8">Aug</option>
+					<option value="9">Sep</option>
+					<option value="10">Oct</option>
+					<option value="11">Nov</option>
+					<option value="12">Dec</option>
+					</select>
+					<select name="date">
+					<option value="0" selected="1">Date</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+					</select>
+					<select name="year">
+					<option value="0" selected="1">Year</option>
+					<option value="2016">2016</option>
+					<option value="2015">2015</option>
+					<option value="2014">2014</option>
+					<option value="2013">2013</option>
+					<option value="2012">2012</option>
+					<option value="2011">2011</option>
+					<option value="2010">2010</option>
+					<option value="2009">2009</option>
+					<option value="2008">2008</option>
+					<option value="2007">2007</option>
+					<option value="2006">2006</option>
+					<option value="2005">2005</option>
+					<option value="2004">2004</option>
+					<option value="2003">2003</option>
+					<option value="2002">2002</option>
+					<option value="2001">2001</option>
+					<option value="2000">2000</option>
+					<option value="1999">1999</option>
+					<option value="1998">1998</option>
+					<option value="1997">1997</option>
+					<option value="1996">1996</option>
+					<option value="1995">1995</option>
+					<option value="1994">1994</option>
+					<option value="1993">1993</option>
+					<option value="1992">1992</option>
+					<option value="1991">1991</option>
+					<option value="1990">1990</option>
+					<option value="1989">1989</option>
+					<option value="1988">1988</option>
+					<option value="1987">1987</option>
+					<option value="1986">1986</option>
+					<option value="1985">1985</option>
+					<option value="1984">1984</option>
+					<option value="1983">1983</option>
+					<option value="1982">1982</option>
+					<option value="1981">1981</option>
+					<option value="1980">1980</option>
+					</select>
+				<br>
+				<br>
+				Gender:<br>
+				<select name="gender">
+					<option value="male">Male</option>
+					<option value="fema">Female</option>
+				</select>
+				<br>
+				<br>
+				Email:<br><input type="text" name="email" value="" style="width:50%"><br>
+				Password:<br><input type="password" name="pword" value="" style="width:50%"><br>
+                Confirm Password:<br><input type="password" name="pword2" value="" style="width:50%"><br>
+				Contact Number:<br><input type="text" name="contact" value="" style="width:50%"><br>
+				<br>
+				<input type="Submit" name="Submit" value="Submit">
+				<input type="Reset" name="Reset"value="Cancel">
+				</form>					
+			</div>
+			
+			<div class="details">
+				
+				<h1 align="center">PUP CCIS KIOSK</h1>
+				<h2 style="-webkit-text-stroke-width: 0.8px; -webkit-text-stroke-color: white;">DESCRIPTION</h2>
+				<p>
+					The PUP CCIS KIOSK is all about informing and promoting interrelations within the PUP CCIS Department. 
+					This is a site that aims to notify students from the CCIS
+					Department about the latest headlines and events happening within the CCIS Community.
+				</p>
+				
+				<img src="res/puplogo.gif" width="150px" height="150px"></img>
+			</div>
+			
+			<div class="devthings">
+			<h2 style="-webkit-text-stroke-width: 0.8px; -webkit-text-stroke-color: white;">DEVELOPERS</h2>
+			<p>
+			John Gilbert Egana, Steven Joshua Soriano, Lawrence Aguila, Raemil Millena, Ryan Kim Dionisio
+			</p>
+			</div>
+		</div>
+	</body>
+</html>
